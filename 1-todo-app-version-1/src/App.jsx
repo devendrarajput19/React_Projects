@@ -1,31 +1,15 @@
+import AppName from "./components/AppName";
+import AddToDo from "./components/AddToDo";
+import ToDoItem from "./components/ToDoItem";
+import "./App.css";
+
 function App() {
   return (
-    <center class="todo-container">
-      <h1>ToDo App</h1>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-6">
-            <input type="text" placeholder="Enter ToDo Here.."></input>
-          </div>
-          <div class="col-4">
-            <input type="date"></input>
-          </div>
-          <div class="col-2">
-            <button type="button" class="btn btn-success">
-              Add
-            </button>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-6">Buy Milk..</div>
-          <div class="col-4">4/10/2026</div>
-          <div class="col-2">
-            <button type="button" class="btn btn-danger">
-              Delete
-            </button>
-          </div>
-        </div>
+    <center className="todo-container">
+      <AppName />
+      <AddToDo />
+      <div className="items-container">
+        <ToDoItem />
       </div>
     </center>
   );
