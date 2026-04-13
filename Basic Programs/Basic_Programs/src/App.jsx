@@ -1,25 +1,16 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import FoodItems from "./components/foodItems";
+import ErrorMessage from "./components/ErrorMessage";
 //
 function App() {
-  let footitem = [];
-  //let footitem = ["Dal", "Green Vegetables", "Roti", "Salad"];
+  let footitems = ["Dal", "Green Vegetables", "Roti", "Salad"];
 
-  // if (footitem.length === 0) {
-  //   return <h3> I am still hungry...</h3>;
-  // }
-  // Adding Ternary condition below
   return (
     <>
       <h1>Healthy Food...</h1>
-      {footitem.length === 0 ? <h3>I am still Hungry...</h3> : null}
-      <ul className="list-group">
-        {footitem.map((item) => (
-          <li key={item} className="list-group-item">
-            {item}
-          </li>
-        ))}
-      </ul>
+      <ErrorMessage items={footitems}></ErrorMessage>
+      <FoodItems items={footitems}></FoodItems>
     </>
   );
 }
