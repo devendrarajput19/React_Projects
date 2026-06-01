@@ -8,4 +8,4 @@ export const Button = () => {
   return <button>Click here...</button>;
 };
 
-// export default Button; - Another way to use export is above
+//export default Button; //- Another way to use export is above
