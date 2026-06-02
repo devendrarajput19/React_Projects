@@ -12,16 +12,16 @@
 // Above code, we are repeating the props again, if there more than 10 props, than it wold be very clumsy code
 // So we are using it in below way
 
-import { UserInfo } from "./UserInfo";
+// import { UserInfo } from "./UserInfo";
 
-export const UserCard = (props) => {
-  return (
-    <div>
-      <h2>User Details</h2>
-      <UserInfo {...props}></UserInfo>
-    </div>
-  );
-};
+// export const UserCard = (props) => {
+//   return (
+//     <div>
+//       <h2>User Details</h2>
+//       <UserInfo {...props}></UserInfo>
+//     </div>
+//   );
+// };
 
 // This will forward all the props of UserInfo to UserCard. If there are any extra props then you can write in below way
 

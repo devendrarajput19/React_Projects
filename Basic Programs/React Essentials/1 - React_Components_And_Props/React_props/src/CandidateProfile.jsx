@@ -15,4 +15,4 @@ export const CandidateProfile = () => {
   );
 };
 
-// Way to writing JSX
+// Way to writing JSX.

@@ -5,10 +5,14 @@ import { Hello } from "./Hello";
 import { UserProfile } from "./UserProfile";
 import { CandidateProfile } from "./CandidateProfile";
 import { Product } from "./Product";
+import { UserDetails } from "./UserDetails";
 
 function App() {
   return (
     <div>
+      <UserDetails name="Devendra" isOnline={true} />
+      <UserDetails name="Dev" isOnline={false} />
+      <UserDetails name="Mahesh" isOnline={false} hideOffline={true} />
       <Product
         title="Gaming Laptop"
         price={49000}
