@@ -3,25 +3,18 @@ export const UserDetails = ({ name, isOnline, hideOffline }) => {
     return null;
   }
 
-  if (isOnline) {
-    return (
-      <div>
-        <h3>{name}</h3>
-        <span>Online...</span>
-        <p>Available for Chat</p>
-        <button>Send Message...</button>
-      </div>
-    );
-  }
-
   return (
     <div>
       <h3>{name}</h3>
-      <span>Offline...</span>
-      <p>Not Available</p>
-      <button>Do not send Message...</button>
+      <span>{isOnline ? "Online..." : "Offline..."}</span>
+      <p>{isOnline ? "Available for Chat..." : "Not Available"}</p>
+      {isOnline ? (
+        <button>Send Message</button>
+      ) : (
+        <small>Check back later...</small>
+      )}
     </div>
   );
 };
 
-// Above code is if condition rendering.
+// Above code is Ternary condition rendering.
