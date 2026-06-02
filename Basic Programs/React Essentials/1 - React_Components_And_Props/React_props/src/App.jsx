@@ -6,10 +6,12 @@ import { UserProfile } from "./UserProfile";
 import { CandidateProfile } from "./CandidateProfile";
 import { Product } from "./Product";
 import { UserDetails } from "./UserDetails";
+import { ProductList } from "./ProductList";
 
 function App() {
   return (
     <div>
+      <ProductList />
       <UserDetails name="Devendra" isOnline={true} />
       <UserDetails name="Dev" isOnline={false} />
       <UserDetails name="Mahesh" isOnline={false} hideOffline={true} />
