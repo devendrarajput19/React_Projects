@@ -17,17 +17,26 @@ export const ProductList = () => {
     },
   ];
 
+  const productElements = products
+    .filter((product) => {
+      return product.Price > 28000;
+    })
+    .map((product) => {
+      return (
+        <div>
+          <h3>{product.name}</h3>
+          <p>Price: {product.Price}</p>
+        </div>
+      );
+    });
+
   return (
     <div>
       <h2>Our Products</h2>
-      {products.map((product) => {
-        return (
-          <div>
-            <h3>{product.name}</h3>
-            <p>Price: {product.Price}</p>
-          </div>
-        );
-      })}
+      {productElements}
     </div>
   );
 };
+
+// Modify the code of map method by adding the code of map method in seperate variable and
+// also filter the list/data using filter method.
