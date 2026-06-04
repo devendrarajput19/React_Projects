@@ -6,12 +6,12 @@ export const ProductList = () => {
       Price: 49000,
     },
     {
-      id: 1,
+      id: 2,
       name: "Phone",
       Price: 25000,
     },
     {
-      id: 1,
+      id: 3,
       name: "Tablet",
       Price: 38000,
     },
@@ -23,7 +23,7 @@ export const ProductList = () => {
     })
     .map((product) => {
       return (
-        <div>
+        <div key={product.id}>
           <h3>{product.name}</h3>
           <p>Price: {product.Price}</p>
         </div>

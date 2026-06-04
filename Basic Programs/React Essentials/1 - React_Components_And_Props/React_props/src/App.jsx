@@ -7,10 +7,13 @@ import { CandidateProfile } from "./CandidateProfile";
 import { Product } from "./Product";
 import { UserDetails } from "./UserDetails";
 import { ProductList } from "./ProductList";
+import { Alert } from "./Alert";
 
 function App() {
   return (
     <div>
+      <Alert>Your changes has been saved...</Alert>
+      <Alert type="error">Something went Wrong!!...</Alert>
       <ProductList />
       <UserDetails name="Devendra" isOnline={true} />
       <UserDetails name="Dev" isOnline={false} />
