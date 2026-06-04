@@ -1,15 +1,11 @@
+import "./Alert.css";
+
+// export const Alert = ({ children, type = "success" }) => {
+//   return <div className="alert">{children}</div>;
+// };
+
 export const Alert = ({ children, type = "success" }) => {
-  return (
-    <div
-      style={{
-        backgroundColor: type === "success" ? "#10b981" : "#ef4444",
-        color: "black",
-        padding: "16px",
-        borderRadius: "8px",
-        marginBottom: "16px",
-      }}
-    >
-      {children}
-    </div>
-  );
+  return <div className={`alert ${type}`}>{children}</div>;
 };
+
+// Above way we can use class of alert and type both. This is the way to write.
