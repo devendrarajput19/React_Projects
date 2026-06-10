@@ -13,7 +13,8 @@ import { CustomButton } from "./CustomButton";
 function App() {
   return (
     <div>
-      <CustomButton />
+      <CustomButton text="Like" />
+      <CustomButton text="Bookmark" />
       <Alert>Your changes has been saved...</Alert>
       <Alert type="error">Something went Wrong!!...</Alert>
       <ProductList />
