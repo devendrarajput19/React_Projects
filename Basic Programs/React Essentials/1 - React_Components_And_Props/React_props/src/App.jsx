@@ -8,10 +8,12 @@ import { Product } from "./Product";
 import { UserDetails } from "./UserDetails";
 import { ProductList } from "./ProductList";
 import { Alert } from "./Alert";
+import { CustomButton } from "./CustomButton";
 
 function App() {
   return (
     <div>
+      <CustomButton />
       <Alert>Your changes has been saved...</Alert>
       <Alert type="error">Something went Wrong!!...</Alert>
       <ProductList />
