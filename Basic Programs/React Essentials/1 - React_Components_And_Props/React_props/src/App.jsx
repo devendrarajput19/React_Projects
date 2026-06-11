@@ -9,10 +9,14 @@ import { UserDetails } from "./UserDetails";
 import { ProductList } from "./ProductList";
 import { Alert } from "./Alert";
 import { CustomButton } from "./CustomButton";
+import { Contact } from "./Contact";
+import { NewsLetter } from "./NewsLetter";
 
 function App() {
   return (
     <div>
+      <Contact />
+      <NewsLetter />
       <CustomButton text="Like" />
       <CustomButton text="Bookmark" />
       <Alert>Your changes has been saved...</Alert>
