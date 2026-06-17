@@ -11,10 +11,12 @@ import { Alert } from "./Alert";
 import { CustomButton } from "./CustomButton";
 import { Contact } from "./Contact";
 import { NewsLetter } from "./NewsLetter";
+import { Menu } from "./Menu";
 
 function App() {
   return (
     <div>
+      <Menu />
       <Contact />
       <NewsLetter />
       <CustomButton text="Like" />
