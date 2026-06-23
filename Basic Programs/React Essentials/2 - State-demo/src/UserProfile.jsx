@@ -11,7 +11,15 @@ export const UserProfile = () => {
 
   const updateName = () => {
     setUser({
+      ...user,
       name: "Dev",
+    });
+  };
+
+  const updateAge = () => {
+    setUser({
+      ...user,
+      age: user.age + 1,
     });
   };
 
@@ -21,6 +29,7 @@ export const UserProfile = () => {
       <p>Age: {user.age}</p>
       <p>Email: {user.email}</p>
       <button onClick={updateName}>Change name to Dev</button>
+      <button onClick={updateAge}>Increase Age by 1</button>
     </div>
   );
 };
