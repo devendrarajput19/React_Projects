@@ -8,12 +8,14 @@ import { UserProfile } from "./UserProfile";
 import { ToDoList } from "./ToDoList";
 import { ShoppingCart } from "./ShoppingCart";
 import { CounterWithReducer } from "./CounterWithReducer";
+import { ShoppingCartWithReducer } from "./ShoppingCartWithReducer";
 
 function App() {
   return (
     <>
       <h1>State-Demo</h1>
-      <CounterWithReducer />
+      <ShoppingCartWithReducer />
+      {/* <CounterWithReducer /> */}
       {/* <ShoppingCart /> */}
       {/* <ToDoList /> */}
       {/* <UserProfile /> */}
